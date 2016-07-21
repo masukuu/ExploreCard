@@ -1,4 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -14,22 +16,26 @@
             android:layout_height="fill_parent"
             android:layout_centerInParent="true"
             android:scaleType="centerCrop"
-            android:src="@drawable/TVwall"/>
+            android:src="@drawable/racing_show" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="52dp"
             android:background="#00000000"
             android:padding="8dp"
-            android:elevation="0dp"
-            android:textSize="55sp"
+            android:shadowColor="#000000"
+            android:shadowDx="10"
+            android:shadowDy="10"
+            android:shadowRadius="20"
             android:text="Go betting!"
             android:textAllCaps="true"
             android:textColor="#ffffff"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true" />
-            <!--android:fontFamily="sans-serif-light"-->
-            />
+            android:textSize="55sp" />
+
+        <!--android:fontFamily="sans-serif-light"-->
 
     </RelativeLayout>
 
@@ -43,6 +49,7 @@
             android:layout_width="match_parent"
             android:layout_height="3dp"
             android:background="#77878B" />
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -66,9 +73,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_toLeftOf="@id/photo3"
-                android:text="Hold on the MONEY!"
-                android:textColor="#ffffff"
-                android:textAppearance="?android:textAppearanceMedium" />
+                android:text="Hold on your MONEY!"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#ffffff" />
 
             <TextView
                 android:id="@+id/description3"
@@ -102,7 +109,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/photo"
-                android:text="Drew the card next"
+                android:text="Fill in the card"
                 android:textAppearance="?android:textAppearanceMedium" />
 
             <TextView
@@ -111,7 +118,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/name"
                 android:layout_toRightOf="@id/photo"
-                android:text=".. and taste chinese cuisine"
+                android:text=".. and go to cashier before ring rang"
                 android:textAppearance="?android:textAppearanceSmall" />
         </RelativeLayout>
 
@@ -139,8 +146,8 @@
                 android:layout_height="wrap_content"
                 android:layout_toLeftOf="@id/photo0"
                 android:text="Take photo with horse..?"
-                android:textColor="#ffffff"
-                android:textAppearance="?android:textAppearanceMedium" />
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#ffffff" />
 
             <TextView
                 android:id="@+id/description0"
@@ -168,14 +175,14 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="10dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/localmarkets" />
+                android:src="@drawable/auditor" />
 
             <TextView
                 android:id="@+id/name2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/photo2"
-                android:text="Local markets"
+                android:text="and.. Enjoy the show"
                 android:textAppearance="?android:textAppearanceMedium" />
 
             <TextView
